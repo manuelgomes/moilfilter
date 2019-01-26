@@ -14,7 +14,7 @@ CSV.foreach("moil.csv") do |row|
     next
   end
 
-  id = row[15].to_i
+  id = row[15].to_s + row[-1].to_s
   idx = row[0].to_i
   row[9] = row[9].titleize
 
